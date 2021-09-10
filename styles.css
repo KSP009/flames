@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial;
+    overflow: hidden;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: azure;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+img{
+    width: 400px;
+    height: 600px;
+}
+.main1{
+    position: fixed;
+    left: 35px;
+}
+.main2{
+    position: fixed;
+    right: 35px;
+}
+.clientside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding: 50px;
+    margin: 50px;
+}
+.clientside>h2{
+    position: fixed;
+    top: 100px;
+    left: center;
+    font-size: 100px;
+    cursor: pointer;
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.clientside>.box1>form>input{
+    width: 400px;
+    height: 40px;
+    border-radius: 3px;
+    border: 2px solid hotpink;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.clientside>.box1>form>input:hover{
+    border: 2px solid red;
+}
+form{
+    position: absolute;
+    top: 250px;
+    right: center;
+    /* cursor: pointer; */
+}
+button{
+    position: absolute;
+    right: center;
+    top: 320px;
+    margin-top: 80px;
+    width: 120px;
+    height: 40px;
+    border:none;
+    background-color: rgb(0, 119, 255);
+    color: aliceblue;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: blue;
+}
+.clientside>.box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 35px;
+    left: center;
+}
+.clientside>.box2>p{
+    font-size: 120px;
+    cursor: pointer;
+    transition: 0.3s;
+    animation: myani;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.clientside>.box2>p:hover{
+    font-size: 140px;
+}
+
+
+
+
+
+
+@keyframes myani{
+    0% {
+        transform: rotate(0deg);
+    }
+    33% {
+        transform: rotate(-20deg);
+    }
+    69% {
+        transform: rotate(20deg);
+    }
+} 
+
